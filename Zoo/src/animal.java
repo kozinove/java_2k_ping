@@ -7,16 +7,16 @@ public class animal {
 
     String Name;
     String type;
-    String clases;
+    String classes;
 
-   void Elephant()
+    void Elephant()
     {
         animal Elephant = new animal();
         Elephant.Name = "Вова";
         Elephant.type = "Травоядное";
-        Elephant.clases = "Млекопитающие";
+        Elephant.classes = "Млекопитающие";
 
-        System.out.printf(" Name: %s\n type: %s\n class: %s\n", Elephant.Name, Elephant.type, Elephant.clases);
+        System.out.printf(" Name: %s\n type: %s\n class: %s\n\n", Elephant.Name, Elephant.type, Elephant.classes);
 
         try {
             File soundFile = new File("elephant.wav"); //Звуковой файл
@@ -37,8 +37,7 @@ public class animal {
             clip.close();
         } catch (IOException | UnsupportedAudioFileException | LineUnavailableException exc) {
             exc.printStackTrace();
-        } catch (InterruptedException exc) {}
-
+        } catch (InterruptedException ignored) {}
     }
 
     void Lion()
@@ -46,9 +45,9 @@ public class animal {
         animal Lion = new animal();
         Lion.Name = "Гена";
         Lion.type = "Хищник";
-        Lion.clases = "Млекопитающие";
+        Lion.classes = "Млекопитающие";
 
-        System.out.printf(" Name: %s\n type: %s\n class: %s\n",  Lion.Name,  Lion.type,  Lion.clases);
+        System.out.printf(" Name: %s\n type: %s\n class: %s\n\n",  Lion.Name,  Lion.type,  Lion.classes);
 
         try {
             File soundFile = new File("lion.wav");
@@ -69,7 +68,7 @@ public class animal {
             clip.close();
         } catch (IOException | UnsupportedAudioFileException | LineUnavailableException exc) {
             exc.printStackTrace();
-        } catch (InterruptedException exc) {}
+        } catch (InterruptedException ignored) {}
     }
 
     void Giraffe()
@@ -77,9 +76,9 @@ public class animal {
         animal Giraffe = new animal();
         Giraffe.Name = "Жора";
         Giraffe.type = "Травоядное";
-        Giraffe.clases = "Млекопитающие";
+        Giraffe.classes = "Млекопитающие";
 
-        System.out.printf(" Name: %s\n type: %s\n class: %s\n", Giraffe.Name,  Giraffe.type,  Giraffe.clases);
+        System.out.printf(" Name: %s\n type: %s\n class: %s\n\n", Giraffe.Name,  Giraffe.type,  Giraffe.classes);
 
         try {
             File soundFile = new File("giraffe.wav");
@@ -100,18 +99,18 @@ public class animal {
             clip.close();
         } catch (IOException | UnsupportedAudioFileException | LineUnavailableException exc) {
             exc.printStackTrace();
-        } catch (InterruptedException exc) {}
+        } catch (InterruptedException ignored) {}
 
     }
 
     void Tiger()
     {
-        animal Tiger= new animal();
+        animal Tiger = new animal();
         Tiger.Name = "Паша";
         Tiger.type = "Хищник";
-        Tiger.clases = "Млекопитающие";
+        Tiger.classes = "Млекопитающие";
 
-        System.out.printf(" Name: %s\n type: %s\n class: %s\n", Tiger.Name, Tiger.type, Tiger.clases);
+        System.out.printf(" Name: %s\n type: %s\n class: %s\n\n", Tiger.Name, Tiger.type, Tiger.classes);
 
         try {
             File soundFile = new File("tiger.wav");
@@ -133,7 +132,7 @@ public class animal {
 
         } catch (IOException | UnsupportedAudioFileException | LineUnavailableException exc) {
             exc.printStackTrace();
-        } catch (InterruptedException exc) {}
+        } catch (InterruptedException ignored) {}
     }
 
 
