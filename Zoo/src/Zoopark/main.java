@@ -19,7 +19,6 @@ public class main {
                     "2.Купить клетку\n" +
                     "3.Пройтись по зоопарку\n" +
                     "4.Вывести Уникальные типы животных\n" +
-                    "5.Кол-во хищников и травоядных\n" +
                     "0.Выйти\n");
 
             ch = scan.nextInt();
@@ -29,7 +28,6 @@ public class main {
                 case (2) -> c.add_cell();
                 case (3) -> c.walk();
                 case (4) -> c.unic();
-                case (5) -> c.getTable();
             }
 
         }while (ch != 0);

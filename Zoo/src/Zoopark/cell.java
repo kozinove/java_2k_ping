@@ -98,31 +98,6 @@ public class cell{
 
             System.out.println(intSet);
     }
-    public void getTable(){
-
-        String[] columnNames = {
-                "Тип",
-                "Кол-во",
-        };
-
-        int countTr = 0;
-        int countPr = 0;
-        for (String s : Type) {
-            if (s.equals("Хищник")) {
-                countPr++;
-            } else if (s.equals("Травоядное")) {
-                countTr++;
-            }
-        }
-
-        String countTrS = String.valueOf(countTr);
-        String countPrS = String.valueOf(countPr);
-        String[][] data = {
-                {"Хищник", countPrS},
-                {"Травоядное", countTrS},
-        };
-        Gui_Table.createGUI(columnNames, data);
-    }
 
 }
 
