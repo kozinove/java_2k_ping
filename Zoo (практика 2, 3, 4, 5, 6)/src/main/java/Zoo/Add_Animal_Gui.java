@@ -6,6 +6,7 @@
 package Zoo;
 
 import javax.swing.JFrame;
+import static Zoo.Zoo_Builder.cell;
 
 /**
  *
@@ -98,22 +99,41 @@ public class Add_Animal_Gui extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
-        
+        if (cell.size() >= Integer.parseInt(jTextField1.getText()) - 1 || Integer.parseInt(jTextField1.getText()) - 1 < 1) {
+            
         Animal_Gui.run();
         int x = Integer.parseInt(jTextField1.getText());
         Zoo_Metods.PutAnimal(x);
         jTextField1.setText("");
         add.setVisible(false);
+            
+        }
+        else
+        {
+          Zoo_Gui.jTextArea2.append("нет такой клетки\n");
+          add.setVisible(false);
+        }
+        
         
         
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-       int x = Integer.parseInt(jTextField1.getText());
+       if (cell.size() >= Integer.parseInt(jTextField1.getText()) - 1 || Integer.parseInt(jTextField1.getText()) - 1 < 1)
+       {
+        
+        int x = Integer.parseInt(jTextField1.getText());
         Zoo_Metods.AnimalRemove(x);
         jTextField1.setText("");
         add.setVisible(false);
+       }
+       else{
+           Zoo_Gui.jTextArea2.append("нет такой клетки\n");
+          add.setVisible(false);
+           
+           }
+    
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     /**

@@ -32,12 +32,6 @@ public class Zoo_Metods {
     
     static void PutAnimal(int x)
     {
-        if (cell.size() > x || x < 1) {
-            
-            Zoo_Gui.jTextArea2.append("Нет таких клеток\n");
-            
-        }
-        else{
         if(cell.get(x - 1).equals("Empty"))
         {
           try{
@@ -51,18 +45,11 @@ public class Zoo_Metods {
             Zoo_Gui.jTextArea2.append("Клетка занята\n");
 
         }
-        }
     }
 
     static void AnimalRemove(int x)
     {
         
-        if (cell.size() > x || x < 1) {
-            
-            Zoo_Gui.jTextArea2.append("Нет таких клеток\n");
-            
-        }
-        else{
         if(cell.get(x - 1).equals("Empty"))
         {
                   Zoo_Gui.jTextArea2.append("Клетка и так пустая\n");
@@ -76,7 +63,7 @@ public class Zoo_Metods {
         }
 
         }
-        }
+    
         
     }
     
