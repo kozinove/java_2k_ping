@@ -4,20 +4,22 @@ public class numbers {
     public static void main(String[] args){
 
         Scanner scan = new Scanner(System.in);
-        int n,ch;
-        double h, h1 = 0;
+        int ch;
+
 
         do {
+            double a, h, h1 = 0 ,i = 1;
 
-            System.out.println("Сколько чисел вывести:");
-            n = scan.nextInt();
+            System.out.println("Выведите число : ");
+            a = scan.nextInt();
 
-            for (int i = 1; i < n + 1; i++) {
-
+            do {
                 h = 1 / i;
                 h1 += h;
-                System.out.println(h1 + " ");
-            }
+                i ++;
+            }while (a < h1);
+
+            System.out.println("\n" + h1);
 
             System.out.println("\n\nПродолжить?");
             ch = scan.nextInt();

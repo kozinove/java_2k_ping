@@ -5,7 +5,7 @@ public class triangle {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        int ch = 0;
+        int ch;
         double a,b,c;
         do {
             System.out.println("Введите 1 сторону треугольника:");

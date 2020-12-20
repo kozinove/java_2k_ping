@@ -5,10 +5,9 @@ public class marks {
     public static void main(String[] args)
     {
         Scanner scan = new Scanner(System.in);
-
-        int ch,a,sum = 0;
-
+        int ch;
         do {
+            int a, sum = 0;
             System.out.println("Введите число:");
             a = scan.nextInt();
 
@@ -19,9 +18,8 @@ public class marks {
             }
             System.out.println(sum);
 
-            sum = 0;
 
-            System.out.println("\n\nПродолжить?");
+            System.out.println("\nПродолжить?");
             ch = scan.nextInt();
 
         }while (ch != 0);

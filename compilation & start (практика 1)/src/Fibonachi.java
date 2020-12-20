@@ -1,4 +1,3 @@
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -7,7 +6,7 @@ public class Fibonachi
 
     public static void main(String[] args) {
 
-        ArrayList<Integer> Fibonachi = new ArrayList();
+        ArrayList<Integer> Fibonachi = new ArrayList<>();
 
         Scanner scan = new Scanner(System.in);
         int n, ch;
