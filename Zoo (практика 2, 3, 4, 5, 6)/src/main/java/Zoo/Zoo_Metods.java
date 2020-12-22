@@ -9,7 +9,6 @@ import static Zoo.Zoo_Builder.an;
 import static Zoo.Zoo_Builder.cell;
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -114,8 +113,6 @@ public class Zoo_Metods {
 
                 line = reader.readLine();
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }

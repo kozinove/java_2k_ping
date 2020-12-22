@@ -29,21 +29,21 @@ public class Zoo_Builder  {
     static String ShowAnimals() {
         
         int x = 1;
-        String tmp  = "";
+        StringBuilder tmp  = new StringBuilder();
  
         if (cell.isEmpty()) {
-           tmp = "Клеток нет";
+           tmp = new StringBuilder("Клеток нет");
         }
         else{
         Iterator<String> iter = cell.iterator();
         while (iter.hasNext()) {
 
-            tmp += "Cage " + x + ": " + iter.next() +"\n";
+            tmp.append("Cage ").append(x).append(": ").append(iter.next()).append("\n");
             x++;
 
         }
         }
-        return tmp;
+        return tmp.toString();
     }
 
 
